@@ -1,0 +1,34 @@
+# Rust
+/target/
+
+# Python: окружение и кеши
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Сборка Python-модуля
+/build/
+/dist/
+*.egg-info/
+*.so
+*.pyd
+
+# Результаты обучения и прогнозирования
+/artifacts/
+/baseline.png
+/learning_curves.png
+/validation_confusion.png
+
+# Локальные настройки и временные файлы
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
