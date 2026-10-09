@@ -44,7 +44,7 @@ y_dev = y[dev_idx]
 epochs = 100
 learning_rate = 0.01
 l2 = 0.015
-dropout = 0.00
+dropout = 0.012
 patience = 10
 
 
@@ -95,7 +95,7 @@ for fold, (fit_idx, score_idx) in enumerate(
     y_stop = y_dev[stop_idx]
     y_score = y_dev[score_idx]
 
-    model = MLP([30, 16, 8, 2], seed=42, dropout=dropout)
+    model = MLP([30, 16, 8,4, 2], seed=42, dropout=dropout)
     rng = np.random.default_rng(42)
 
     best_loss = float("inf")
